@@ -1,0 +1,31 @@
+supplier_id,supplier_name,tier,country,lat,lon,lead_time_days,reliability_score,parent_supplier_id
+SUP-001,Vietnam Parts Co. 1,1,Vietnam,11.0789,105.65,24,0.7,
+SUP-002,Taiwan Parts Co. 2,1,Taiwan,24.2791,120.705,41,0.63,
+SUP-003,South Korea Parts Co. 3,1,South Korea,37.4438,126.0596,20,0.69,
+SUP-004,Japan Parts Co. 4,1,Japan,35.904,139.8225,41,0.76,
+SUP-005,Germany Parts Co. 5,1,Germany,51.0984,6.3564,7,0.9,
+SUP-006,Netherlands Parts Co. 6,1,Netherlands,51.2193,4.3452,24,0.66,
+SUP-007,Poland Parts Co. 7,1,Poland,53.1144,20.6732,12,0.75,
+SUP-008,USA Parts Co. 8,1,USA - Michigan,42.018,-83.3121,23,0.91,
+SUP-009,USA Parts Co. 9,1,USA - Texas,30.2595,-95.3275,31,0.63,
+SUP-010,USA Parts Co. 10,1,USA - California,33.6864,-117.9427,30,0.83,
+SUP-011,Mexico Parts Co. 11,1,Mexico,19.8091,-100.0084,21,0.9,
+SUP-012,India Parts Co. 12,1,India,20.0704,73.6106,13,0.75,
+SUP-013,Thailand Parts Co. 13,1,Thailand,13.7068,101.1682,17,0.74,
+SUP-014,Malaysia Parts Co. 14,1,Malaysia,2.519,101.234,11,0.84,
+SUP-015,China Parts Co. 15,1,China,30.5423,121.9583,17,0.78,
+SUP-016,Vietnam Parts Co. 16,1,Vietnam,10.3399,107.4508,42,0.69,
+SUP-017,Taiwan Parts Co. 17,1,Taiwan,24.6486,122.0366,10,0.69,
+SUP-018,South Korea Parts Co. 18,1,South Korea,36.6642,126.6309,24,0.63,
+SUP-019,Japan Parts Co. 19,1,Japan,36.5263,139.8344,27,0.68,
+SUP-020,Germany Parts Co. 20,1,Germany,51.1985,7.5694,36,0.66,
+SUP-021,Taiwan Components Ltd. 21,2,Taiwan,25.49,121.578,51,0.69,SUP-008
+SUP-022,USA Components Ltd. 22,2,USA - Texas,29.524,-94.4053,22,0.73,SUP-013
+SUP-023,Vietnam Components Ltd. 23,2,Vietnam,11.5222,105.9057,24,0.86,SUP-002
+SUP-024,Netherlands Components Ltd. 24,2,Netherlands,51.0271,4.2632,43,0.74,SUP-020
+SUP-025,USA Components Ltd. 25,2,USA - Michigan,42.6606,-83.7709,48,0.84,SUP-001
+SUP-026,India Components Ltd. 26,2,India,18.3231,72.7695,43,0.5,SUP-011
+SUP-027,Mexico Components Ltd. 27,2,Mexico,20.3438,-98.5761,46,0.91,SUP-009
+SUP-028,Thailand Components Ltd. 28,2,Thailand,14.4833,100.5153,26,0.57,SUP-010
+SUP-029,India Components Ltd. 29,2,India,19.1788,73.4573,47,0.91,SUP-006
+SUP-030,USA Components Ltd. 30,2,USA - Texas,29.7772,-96.1763,37,0.9,SUP-011

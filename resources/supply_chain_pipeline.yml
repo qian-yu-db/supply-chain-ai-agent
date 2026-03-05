@@ -1,0 +1,13 @@
+resources:
+  pipelines:
+    supply_chain_pipeline:
+      name: "supply_chain_disruption_pipeline"
+      catalog: "tko_mtv_goup5"
+      schema: "supply_chain_qyu"
+      libraries:
+        - file:
+            path: ../src/supply_chain_pipeline/silver_shipment_health.sql
+        - file:
+            path: ../src/supply_chain_pipeline/silver_supplier_risk.sql
+        - file:
+            path: ../src/supply_chain_pipeline/gold_disruption_impact.sql

@@ -1,0 +1,51 @@
+sku_id,part_name,category,unit_cost,supplier_id,alt_supplier_id,is_critical_path,cost_air_freight_multiplier
+SKU-0001,MCU Controller,semiconductor,29.43,SUP-010,SUP-008,False,7.3
+SKU-0002,Power IC,semiconductor,366.09,SUP-003,SUP-004,False,6.9
+SKU-0003,MOSFET Driver,semiconductor,64.63,SUP-018,SUP-005,True,4.9
+SKU-0004,FPGA Module,semiconductor,132.9,SUP-018,SUP-006,False,7.2
+SKU-0005,Sensor IC,semiconductor,464.49,SUP-014,SUP-007,False,6.5
+SKU-0006,ADC Converter,semiconductor,199.8,SUP-007,SUP-011,True,6.0
+SKU-0007,Voltage Regulator,semiconductor,449.86,SUP-012,SUP-016,False,4.7
+SKU-0008,Memory Chip,semiconductor,32.48,SUP-008,SUP-009,False,2.1
+SKU-0009,DSP Processor,semiconductor,294.43,SUP-018,SUP-008,True,2.0
+SKU-0010,GPU Compute Module,semiconductor,34.17,SUP-002,SUP-009,False,2.2
+SKU-0011,Brushless DC Motor,motor,257.32,SUP-011,SUP-003,False,3.7
+SKU-0012,Stepper Motor,motor,269.85,SUP-016,SUP-007,True,6.3
+SKU-0013,Servo Actuator,motor,236.6,SUP-019,SUP-020,False,6.7
+SKU-0014,Linear Actuator,motor,47.62,SUP-014,SUP-007,False,6.0
+SKU-0015,Cooling Fan Assembly,motor,205.85,SUP-012,SUP-015,True,7.2
+SKU-0016,Micro Motor Unit,motor,30.78,SUP-002,SUP-005,False,6.4
+SKU-0017,Hydraulic Pump,motor,96.2,SUP-004,SUP-009,False,5.2
+SKU-0018,Aluminum Enclosure,housing,92.15,SUP-005,SUP-015,True,4.8
+SKU-0019,Steel Bracket,housing,404.11,SUP-003,SUP-016,False,7.1
+SKU-0020,Plastic Casing,housing,326.25,SUP-004,SUP-002,False,5.2
+SKU-0021,Heat Sink Assembly,housing,463.22,SUP-001,SUP-004,True,7.1
+SKU-0022,Mounting Plate,housing,243.08,SUP-006,SUP-015,False,3.3
+SKU-0023,Titanium Frame,housing,82.74,SUP-013,SUP-002,False,2.0
+SKU-0024,Composite Shell,housing,463.3,SUP-013,SUP-009,True,6.7
+SKU-0025,USB-C Port,connector,348.45,SUP-010,SUP-015,False,6.4
+SKU-0026,Power Connector,connector,77.82,SUP-018,SUP-016,False,3.8
+SKU-0027,Ribbon Cable,connector,368.0,SUP-002,SUP-020,True,2.4
+SKU-0028,Terminal Block,connector,25.55,SUP-011,SUP-002,False,4.9
+SKU-0029,RF Connector,connector,28.91,SUP-017,SUP-006,False,5.0
+SKU-0030,Board-to-Board Connector,connector,297.72,SUP-006,SUP-003,True,6.1
+SKU-0031,Fiber Optic Coupler,connector,60.38,SUP-008,SUP-014,False,7.3
+SKU-0032,Bearing Assembly,mechanical,297.46,SUP-008,SUP-020,False,5.7
+SKU-0033,Gear Set,mechanical,282.83,SUP-014,SUP-020,True,3.9
+SKU-0034,Spring Mechanism,mechanical,335.03,SUP-009,SUP-007,False,3.9
+SKU-0035,Shaft Coupling,mechanical,65.87,SUP-009,SUP-014,False,5.9
+SKU-0036,Gasket Kit,mechanical,464.54,SUP-015,SUP-011,True,7.6
+SKU-0037,O-Ring Set,mechanical,310.77,SUP-001,SUP-016,False,5.4
+SKU-0038,Linear Rail Guide,mechanical,269.05,SUP-004,SUP-003,False,5.0
+SKU-0039,LED Module,optical,440.49,SUP-005,SUP-013,True,7.3
+SKU-0040,Lens Assembly,optical,79.29,SUP-012,SUP-010,False,7.0
+SKU-0041,Light Guide,optical,4.41,SUP-010,SUP-018,False,6.9
+SKU-0042,Optical Sensor,optical,469.5,SUP-010,SUP-004,True,2.8
+SKU-0043,Laser Diode,optical,371.34,SUP-004,SUP-005,False,2.9
+SKU-0044,IR Emitter,optical,358.95,SUP-010,SUP-007,False,3.2
+SKU-0045,Capacitor Bank,passive,244.52,SUP-009,SUP-018,True,7.4
+SKU-0046,Inductor Coil,passive,317.33,SUP-002,SUP-004,False,7.0
+SKU-0047,Resistor Array,passive,167.11,SUP-002,SUP-001,False,2.8
+SKU-0048,Transformer Unit,passive,370.74,SUP-009,SUP-006,True,5.3
+SKU-0049,Fuse Module,passive,5.33,SUP-014,SUP-019,False,2.5
+SKU-0050,Crystal Oscillator,passive,18.5,SUP-005,SUP-019,False,4.2

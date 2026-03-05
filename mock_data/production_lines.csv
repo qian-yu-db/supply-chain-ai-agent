@@ -1,0 +1,6 @@
+production_line_id,product_name,daily_output_units,daily_revenue,shutdown_cost_per_day
+PL-001,EV Battery Pack Assembly,471,1380927,1578595
+PL-002,Industrial Robot Controller,235,1409164,1754282
+PL-003,Smart HVAC Control Unit,412,1464143,1328115
+PL-004,Medical Imaging Module,425,869385,1013027
+PL-005,Autonomous Sensor Array,188,1864108,2294975

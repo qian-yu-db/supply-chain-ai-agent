@@ -1,0 +1,18 @@
+bundle:
+  name: research-paper-pipeline
+
+include:
+  - resources/supply_chain_pipeline.yml
+  - resources/supply_chain_app.yml
+
+variables:
+  catalog:
+    default: "fins_genai"
+  schema:
+    default: "unstructured_documents"
+
+targets:
+  dev:
+    default: true
+    workspace:
+      profile: DEFAULT

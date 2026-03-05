@@ -1,0 +1,19 @@
+resources:
+  apps:
+    supply_chain_control_tower:
+      name: "supply-chain-control-tower-qyu"
+      description: "Supply Chain Control Tower - Chat with the Shipment"
+      source_code_path: ../app
+      config:
+        command:
+          - streamlit
+          - run
+          - app.py
+        env:
+          - name: SERVING_ENDPOINT_NAME
+            value: mas-a682127d-endpoint
+      resources:
+        - name: serving_endpoint
+          serving_endpoint:
+            name: mas-a682127d-endpoint
+            permission: CAN_QUERY

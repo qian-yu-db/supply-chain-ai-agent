@@ -1,0 +1,14 @@
+command:
+  - streamlit
+  - run
+  - app.py
+
+env:
+  - name: SERVING_ENDPOINT_NAME
+    valueFrom: serving_endpoint
+
+resources:
+  - name: serving_endpoint
+    serving_endpoint:
+      name: mas-a682127d-endpoint
+      permission: CAN_QUERY
