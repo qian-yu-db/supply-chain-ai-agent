@@ -1,0 +1,44 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#FF3621', 'primaryTextColor': '#1B3139', 'primaryBorderColor': '#FF3621', 'lineColor': '#5C6670', 'secondaryColor': '#00A972', 'tertiaryColor': '#E8ECF0', 'fontFamily': 'Inter, sans-serif'}}}%%
+
+flowchart TB
+    subgraph STEP1["<b>Step 1: Simulate</b> — Mock Data Generation"]
+        direction LR
+        GEN["generate_mock_data.py<br/><i>Python script</i>"]
+        CSV["7 CSV Files<br/>suppliers, parts_catalog,<br/>supplier_inventory,<br/>production_lines,<br/>purchase_orders,<br/>storm_alerts,<br/>sea_freight_tracking"]
+        VOL[("Unity Catalog Volume<br/><code>/Volumes/tko_mtv_goup5/<br/>supply_chain_qyu/dataset</code>")]
+        DELTA[("Delta Tables<br/>7 tables in<br/><code>supply_chain_qyu</code>")]
+        GEN --> CSV --> VOL --> DELTA
+    end
+
+    subgraph STEP2["<b>Step 2: Evaluate</b> — Lakeflow SDP Pipeline"]
+        direction LR
+        SILVER1["silver_shipment_health<br/><i>Haversine storm proximity<br/>+ PO join + health status</i>"]
+        SILVER2["silver_supplier_risk<br/><i>Inventory risk levels<br/>+ Tier-2 cascade flags</i>"]
+        GOLD["gold_disruption_impact<br/><i>Per-production-line risk<br/>+ financial exposure</i>"]
+        SILVER1 --> GOLD
+        SILVER2 --> GOLD
+    end
+
+    subgraph STEP3["<b>Step 3: Triage</b> — Lakebase Operational Store"]
+        direction LR
+        SYNC["sync_to_lakebase.py<br/><i>Upsert + ETA variance<br/>computation</i>"]
+        PG[("Lakebase<br/>PostgreSQL 17<br/><i>supply-chain-ops-qyu</i>")]
+        PG_TABLES["shipment_health<br/>disruption_impact<br/>eta_variance"]
+        SYNC --> PG --> PG_TABLES
+    end
+
+    subgraph STEP4["<b>Step 4: Serve</b> — AI Agent + App"]
+        direction LR
+        VS["Vector Search Index<br/><i>supplier_parts_index<br/>databricks-gte-large-en</i>"]
+        GENIE["Genie Space<br/><i>Natural language<br/>to SQL</i>"]
+        MAS["Supervisor Agent<br/><i>MAS on Model Serving<br/>mas-a682127d-endpoint</i>"]
+        APP["Streamlit App<br/><i>Supply Chain<br/>Control Tower</i>"]
+        VS --> MAS
+        GENIE --> MAS
+        MAS --> APP
+    end
+
+    DELTA --> STEP2
+    STEP2 --> SYNC
+    DELTA --> VS
+    DELTA --> GENIE
